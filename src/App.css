@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --c1: #37352F;
+  --c2: #46443F;
+  --c3: #63615D;
+  --c4: #7E7C78;
+  --c5: #898988;
+  --c6: #92908D;
+  --c7: #A3A2A1;
+  --c8: #AFAFAF;
+  --c9: #C8C7C5;
+  --c10: #E7E6E6;
+}
+
+.container{
+  background-color: var(--c1);
+}
