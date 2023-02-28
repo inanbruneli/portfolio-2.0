@@ -1,0 +1,31 @@
+.container-head {  
+  width: 100%;
+}
+
+.container-head .logo{
+  font-size: 26px;
+  color: var(--c1);
+  font-weight: bold;
+}
+
+.darkmode {
+  width: 33px;
+  height: 33px;
+  background-image: url('/src/assets/images/lua.svg');  
+}
+
+.language {
+  width: 70px;
+  height: 30px;
+  border: 2px solid var(--c1);
+  border-radius: 5px;
+  font-size: 20px;
+  color: var(--c1);
+}
+
+
+.selected {
+  border: 2px solid transparent;
+  color: var(--white);
+  background-color: var(--c1)
+}

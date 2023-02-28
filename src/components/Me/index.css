@@ -1,0 +1,101 @@
+.container-me{
+  margin-top: 6.5rem;
+}
+
+.illustration{
+  background-image: url('/src/assets/images/inan.svg');
+  width: 290px;
+  height:290px
+}
+
+.content{
+  height: 10px;  
+}
+
+.content-head{
+   color: var(--c1);
+}
+
+.content-head h1{
+  font-size: 34px;  
+  font-weight: bold;
+}
+
+.content-head h2{
+  font-size: 26px;  
+  font-weight: 400;
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--c1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .img{
+  background-repeat: no-repeat;  
+  background-color: var(--c1);
+}
+
+.whats .img{  
+  -webkit-mask: url('../../assets/images/whats.svg') no-repeat center;
+  mask: url('../../assets/images/whats.svg') no-repeat center;
+  margin-bottom: 4px; 
+  width: 29px;
+  height: 29px;
+}
+
+.insta .img{  
+  -webkit-mask: url('../../assets/images/insta.svg') no-repeat center;
+  mask: url('../../assets/images/insta.svg') no-repeat center;
+  width: 29.5px;
+  height: 29.5px;
+}
+
+.git .img{  
+  -webkit-mask: url('../../assets/images/git.svg') no-repeat center;
+  mask: url('../../assets/images/git.svg') no-repeat center;
+  width: 29.5px;
+  height: 29.5px;  
+}
+
+.divider{
+  width: 100%;
+  height: 1px;
+  background-color: var(--c7);
+}
+
+.sobre-mim h1{
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.borda div{
+  background-color: var(--c1)  
+}
+
+.grossa {
+  width: 70px;
+  height: 5px;
+}
+
+.fina {
+  width: 100px;
+  height: 2px;
+}
+
+.main-text{
+  width: 100%;
+}
+
+.main-text h1{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: var(--c3);
+}
