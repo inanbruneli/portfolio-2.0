@@ -23,15 +23,15 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="mt-3 d-flex justify-content-between">
+      <div className="mt-3 d-lg-flex d-md-block justify-content-between">
         {aplicacoes.map(aplicacao => (
-          <div className="skill-item">
+          <div className="skill-item mb-5">
             <h1>{aplicacao}</h1>
             <div className="list mt-4">
               {skills.filter(skill => skill.tipo == aplicacao).map(skill => (
                 <div className='d-flex justify-content-between mb-1'>
                   <h2>{skill.linguagem}</h2>
-                  <div className="dots d-flex col-5 justify-content-between">
+                  <div className="dots d-flex col-xl-5 col-lg-6 col-md-6 col-sm-6 col-6 justify-content-between">
                     {makeStars(skill.estrelas)}
                   </div>
                 </div>

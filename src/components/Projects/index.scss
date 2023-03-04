@@ -1,0 +1,24 @@
+.item-page {
+  width: 3.5rem;
+  height: 2rem;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c10);
+  color: var(--c1);
+}
+
+.selected{
+  background-color: var(--c1);
+  color: var(--c10);
+}
+
+.container-projects{
+  .item-project{
+    width: 30%;
+    height: 600px;
+    background-image: url('../../assets/images/projects/projeto1.png');
+    background-size: cover;
+    border-radius: 5px;     
+  }
+}

@@ -1,6 +1,7 @@
 import './App.css';
 import Head from "./components/Head";
 import Me from './components/Me';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
         <Head />
         <Me />
         <Skills />
+        <Projects />
       </div>
     </div>
   );
