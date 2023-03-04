@@ -1,5 +1,7 @@
 import './index.scss';
 import { skills } from '../../assets/skills';
+import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
 
 export default function Skills() {
   function makeStars(star: number) {
@@ -12,6 +14,18 @@ export default function Skills() {
   }
 
   const aplicacoes = ['frontend', 'backend', 'UI'];
+
+  const BootstrapTooltip = styled(({ className, ...props }: TooltipProps) => (
+    <Tooltip {...props} arrow classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.arrow}`]: {
+      color: '#37352F',
+    },
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: '#37352F',
+      fontSize: '0.8rem',
+    },
+  }));
 
   return (
     <div className="container-skills col-12 mt-5">
@@ -27,14 +41,16 @@ export default function Skills() {
         {aplicacoes.map(aplicacao => (
           <div className="skill-item mb-5">
             <h1>{aplicacao}</h1>
-            <div className="list mt-4">
+            <div className="list mt-3">
               {skills.filter(skill => skill.tipo == aplicacao).map(skill => (
-                <div className='d-flex justify-content-between mb-1'>
-                  <h2>{skill.linguagem}</h2>
-                  <div className="dots d-flex col-xl-5 col-lg-6 col-md-6 col-sm-6 col-6 justify-content-between">
-                    {makeStars(skill.estrelas)}
+                <BootstrapTooltip title={skill.texto} placement="right">
+                  <div className='stack d-flex justify-content-between align-items-center'>
+                    <span>{skill.linguagem}</span>
+                    <div className="dots d-flex col-xl-5 col-lg-6 col-md-6 col-sm-6 col-6 justify-content-between">
+                      {makeStars(skill.estrelas)}
+                    </div>
                   </div>
-                </div>
+                </BootstrapTooltip>
               ))}
             </div>
           </div>
