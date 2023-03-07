@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Head from "./components/Head";
 import Me from './components/Me';
 import Projects from './components/Projects';

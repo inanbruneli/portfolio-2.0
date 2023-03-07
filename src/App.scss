@@ -1,0 +1,41 @@
+:root{
+  --c1: #37352F;
+  --c2: #46443F;
+  --c3: #63615D;
+  --c4: #7E7C78;
+  --c5: #898988;
+  --c6: #92908D;
+  --c7: #A3A2A1;
+  --c8: #AFAFAF;
+  --c9: #C8C7C5;
+  --c10: #E7E6E6;  
+  --c11: #FFFFFE;  
+  --white: #FFF;
+
+  --color-primary: #f1f1f1;  
+  --color-secondary: #37352F;
+
+  &.theme--night {
+    --c11: #37352F;
+    --c10: #46443F;
+    --c9: #63615D;
+    --c8: #7E7C78;
+    --c7: #898988;
+    --c6: #92908D;
+    --c5: #A3A2A1;
+    --c4: #AFAFAF;
+    --c3: #C8C7C5;
+    --c2: #E7E6E6;  
+    --c1: #FFFFFE;  
+
+
+    --color-primary: #1f1e1a;    
+    --color-secondary: #FFFFFE;
+  }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Sans';
+}

@@ -9,14 +9,16 @@
       text-align: center;
       font-weight: 400;
       font-size: 22px;
-      padding: 10px 0
+      padding: 10px 0;
+      color: var(--c1);      
     }
 
     .list{   
 
       span{
         font-weight: 400;
-        font-size: 18px;        
+        font-size: 18px; 
+        color: var(--c1);       
       }
 
       .dot{
@@ -35,13 +37,13 @@
 
     .stack{
       padding: 0.3rem 1.25rem;
-      transition: .3s;
+      transition: .3s;    
 
       &:hover {
         background-color: var(--c1);
 
         span {
-          color: var(--c11) !important;
+          color: var(--c11) !important;          
         }
 
         .dot {
