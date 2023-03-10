@@ -14,11 +14,23 @@
 }
 
 .container-projects{
-  .item-project{
-    width: 30%;
-    height: 600px;
-    background-image: url('../../assets/images/projects/projeto1.png');
-    background-size: cover;
+
+  .item-project {
+    cursor: pointer;
+      
     border-radius: 5px;     
+    filter: grayscale(100%);
+    transition: .2s ease;   
+
+    &:hover{
+      transform: scale(1.05);
+      filter: grayscale(0%);
+    }
+
+    img{
+      width: 100%;
+      height: 100%;    
+      border-radius: 5px; 
+    }
   }
 }

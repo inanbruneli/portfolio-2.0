@@ -16,16 +16,36 @@
 
 .language {
   width: 70px;
-  height: 30px;
-  border: 2px solid var(--c1);
+  height: 30px;  
   border-radius: 5px;
   font-size: 20px;
   color: var(--c1);
+  background: #ffffff;
+  cursor: pointer;
 }
 
 
 .selected {
   border: 2px solid transparent;
   color: var(--white);
-  background-color: var(--c1)
+  background-color: var(--c1);
+  width: 70px;  
+  height: 30px;
+  position: absolute;
+  right:10%;
+  
+  border-radius: 5px;
+  font-size: 20px;
+  color: var(--c1);
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.language-novo{
+  width: 140px;
+  height: 30px;
+  background: #ffffff;
+  box-shadow:  11px 11px 35px #bfbfbf, -11px -11px 35px #ffffff;
+  border-radius: 5px;
+  position: relative;
 }

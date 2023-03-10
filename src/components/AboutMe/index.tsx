@@ -1,4 +1,4 @@
-import '../Me/index.css';
+import '../Me/index.scss';
 
 export default function AboutMe() {
   return (

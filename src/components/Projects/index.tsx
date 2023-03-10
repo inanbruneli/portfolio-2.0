@@ -21,10 +21,16 @@ export default function Projects() {
         </div>
       </div>
 
-      <div className="d-flex container-projects justify-content-between mt-3">
-        <div className="item-project"></div>
-        <div className="item-project"></div>
-        <div className="item-project"></div>
+      <div className="d-flex container-projects justify-content-between mt-3 gap-3">
+        <div className="item-project">
+          <img src="./images/projetos/projeto14.png" alt="" />
+        </div>
+        <div className="item-project">
+          <img src="./images/projetos/projeto12.png" alt="" />
+        </div>
+        <div className="item-project">
+          <img src="./images/projetos/projeto13.png" alt="" />
+        </div>
       </div>
     </div>
   )

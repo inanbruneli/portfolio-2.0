@@ -23,16 +23,30 @@
 .item {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  border: 2px solid var(--c1);
+  border-radius: 50%;  
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  transition: .2s;
+  cursor: pointer;
 
-.item .img{
-  background-repeat: no-repeat;  
-  background-color: var(--c1);
+  &:active {   
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+   }
+
+  &:hover{
+    background-color: var(--c1);    
+
+    .img {
+      background-color: var(--c11) !important; 
+    }    
+  }  
+
+  .img {
+    background-repeat: no-repeat;  
+    background-color: var(--c1);
+  }
 }
 
 .whats .img{  
@@ -43,9 +57,9 @@
   height: 29px;
 }
 
-.insta .img{  
-  -webkit-mask: url('../../assets/images/insta.svg') no-repeat center;
-  mask: url('../../assets/images/insta.svg') no-repeat center;
+.linkedin .img{  
+  -webkit-mask: url('../../assets/images/linkedin.svg') no-repeat center;
+  mask: url('../../assets/images/linkedin.svg') no-repeat center;
   width: 29.5px;
   height: 29.5px;
 }
@@ -117,7 +131,7 @@
 @media screen and (max-width: 550px){
   .illustration img{
     width: 7rem;
-    margin-bottom: 4rem;
+    margin-bottom: 4rem;    
   }
 
   .container-me{
@@ -130,5 +144,19 @@
   
   .content-head h2{
     font-size: 18px;      
+  }
+}
+
+.illustration {   
+  width: 20rem;
+  height: 20rem;
+  background-image: url('../../assets/images/inan.svg');  
+  background-size: cover;
+  transition: .5s ease-in;
+  cursor: pointer;    
+
+  &:hover {
+    background-image: url('../../assets/images/inan-side.svg');  
+    filter: drop-shadow(0 0 23px var(--c5))
   }
 }
