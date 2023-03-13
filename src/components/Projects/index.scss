@@ -1,14 +1,21 @@
 .item-page {
-  width: 3.5rem;
-  height: 2rem;    
+  width: 2.5rem;
+  height: 2.5rem;    
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--c10);
+  background-color: var(--c7);
   color: var(--c1);
+  transition: .2s;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    border-radius: 50%;
+  }
 }
 
-.selected{
+.page-selected {
   background-color: var(--c1);
   color: var(--c10);
 }
@@ -27,10 +34,21 @@
       filter: grayscale(0%);
     }
 
-    img{
+    img {
       width: 100%;
       height: 100%;    
       border-radius: 5px; 
     }
+  }
+}
+
+@media screen and (max-width: 760px){
+  .container-projects  {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .item-project{
+    width: 70%;
   }
 }

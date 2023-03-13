@@ -1,8 +1,10 @@
 import './index.scss';
-import Tooltip from '@mui/material/Tooltip';
-
+import { projects } from '../../assets/projects';
+import { useState } from 'react';
 
 export default function Projects() {
+  const [page, setPage] = useState(1);
+
   return (
     <div className="col-12 mt-2">
       <div className="d-flex gap-5 align-items-end">
@@ -15,22 +17,19 @@ export default function Projects() {
           </div>
         </div>
         <div className="row pages gap-1">
-          <div className="item-page selected">I</div>
-          <div className="item-page">II</div>
-          <div className="item-page">III</div>
+          <div className={`item-page ${page == 1 && 'page-selected'}`} onClick={() => setPage(1)}>I</div>
+          <div className={`item-page ${page == 2 && 'page-selected'}`} onClick={() => setPage(2)}>II</div>
+          <div className={`item-page ${page == 3 && 'page-selected'}`} onClick={() => setPage(3)}>III</div>
+          <div className={`item-page ${page == 4 && 'page-selected'}`} onClick={() => setPage(4)}>IIII</div>
         </div>
       </div>
 
       <div className="d-flex container-projects justify-content-between mt-3 gap-3">
-        <div className="item-project">
-          <img src="./images/projetos/projeto14.png" alt="" />
-        </div>
-        <div className="item-project">
-          <img src="./images/projetos/projeto12.png" alt="" />
-        </div>
-        <div className="item-project">
-          <img src="./images/projetos/projeto13.png" alt="" />
-        </div>
+        {projects.filter(item => item.page == page).map(item => (
+          <div className="item-project">
+            <img src={item.image} alt="" />
+          </div>
+        ))}
       </div>
     </div>
   )
