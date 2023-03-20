@@ -15,13 +15,13 @@ export default function Me() {
               <h2>desenvolvedor front-end</h2>
             </div>
             <div className="col-md-6 col-sm-12 d-flex gap-3 justify-content-md-end justify-content-sm-center justify-content-center mt-md-0 mt-sm-4 mt-4">
-              <div className="item item-selected git">
+              <div className="item git" onClick={() => window.open('https://github.com/inanbruneli', '_blank')}>
                 <div className="img"></div>
               </div>
-              <div className="item whats">
+              <div className="item whats" onClick={() => window.open('https://wa.link/z2ae3i', '_blank')}>
                 <div className="img"></div>
               </div>
-              <div className="item linkedin">
+              <div className="item linkedin" onClick={() => window.open('https://www.linkedin.com/in/inan-brunelli/', '_blank')}>
                 <div className="img"></div>
               </div>
             </div>

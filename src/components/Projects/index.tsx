@@ -1,9 +1,20 @@
 import './index.scss';
 import { projects } from '../../assets/projects';
 import { useState } from 'react';
+import { ProjectProps } from '../../App';
 
-export default function Projects() {
+interface Props {
+  setProject: (project: ProjectProps) => void;
+  setShowModal: (show: boolean) => void;
+}
+
+export default function Projects({ setProject, setShowModal }: Props) {
   const [page, setPage] = useState(1);
+
+  function clickProject(project: ProjectProps) {
+    setProject(project);
+    setShowModal(true);
+  }
 
   return (
     <div className="col-12 mt-2">
@@ -26,7 +37,7 @@ export default function Projects() {
 
       <div className="d-flex container-projects justify-content-between mt-3 gap-3">
         {projects.filter(item => item.page == page).map(item => (
-          <div className="item-project">
+          <div className="item-project" onClick={() => clickProject(item)}>
             <img src={item.image} alt="" />
           </div>
         ))}

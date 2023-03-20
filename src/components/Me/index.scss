@@ -150,13 +150,23 @@
 .illustration {   
   width: 20rem;
   height: 20rem;
-  background-image: url('../../assets/images/inan.svg');  
+  background-image: url('../../assets/images/inan-light.svg');  
   background-size: cover;
   transition: .5s ease-in;
   cursor: pointer;    
 
   &:hover {
-    background-image: url('../../assets/images/inan-side.svg');  
+    background-image: url('../../assets/images/inanside-light.svg');  
     filter: drop-shadow(0 0 23px var(--c5))
+  }
+}
+
+.theme--night {
+  .illustration{
+    background-image: url('../../assets/images/inan-dark.svg');  
+
+    &:hover {
+      background-image: url('../../assets/images/inanside-dark.svg');       
+    }
   }
 }
