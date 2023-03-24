@@ -1,6 +1,7 @@
 import Modal from '@mui/material/Modal';
 import './index.scss'
 import { ProjectProps } from '../../App';
+import Slide from '../Slide';
 
 interface Props {
   project: ProjectProps;
@@ -19,8 +20,8 @@ export default function ProjectModal({ project, showModal, setShowModal }: Props
     >
       <div className="box-modal">
         <div className="container-modal">
-          <div className="close"></div>
-          <div className="header d-flex align-items-center gap-4">
+          <div className="close" style={{ cursor: 'pointer' }} onClick={() => setShowModal(false)}></div>
+          <div className="header d-flex flex-sm-row flex-column align-items-center gap-4">
             <h1 className="fw-bold">{project.name}</h1>
             <div className="tags d-flex gap-2 pb-2">
               {project.buttons.map(button => (
@@ -37,11 +38,7 @@ export default function ProjectModal({ project, showModal, setShowModal }: Props
             <h2>{project.descricao}</h2>
           </div>
 
-          <div className="slide d-flex align-items-center mt-3">
-            <div className="slide-seta left"></div>
-            <img src="./images/projetos/ignews/slide1.png" alt="" />
-            <div className="slide-seta right"></div>
-          </div>
+          <Slide images={project.slideImages} />
 
           <div className="mt-3">
             <div className="sobre-mim">

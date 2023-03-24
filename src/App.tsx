@@ -20,6 +20,7 @@ export interface ProjectProps {
   page: number;
   buttons: ButtonsProps[];
   tech: string[];
+  slideImages: string[];
 }
 
 export default function App() {
@@ -34,7 +35,6 @@ export default function App() {
         <Skills />
         <Projects setProject={setProject} setShowModal={setShowModal} />
         {project && <ProjectModal project={project} showModal={showModal} setShowModal={setShowModal} />}
-        <Slide />
       </div>
     </div>
   );

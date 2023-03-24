@@ -1,32 +1,21 @@
-
-import { useState, useEffect, useRef } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import Carousel from 'react-bootstrap/Carousel';
 import './index.scss'
-import { motion } from 'framer-motion';
 
-const images = ['./images/projetos/ignews/slide1.png', './images/projetos/ignews/slide1.png', './images/projetos/ignews/slide1.png', './images/projetos/ignews/slide1.png', './images/projetos/ignews/slide1.png']
+interface Props {
+  images: string[];
+}
 
-export default function Slide() {
-  const carousel = useRef();
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    console.log(carousel.current);
-
-    // setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
-  }, [])
-
+export default function Slide({ images }: Props) {
   return (
-    <div className="slide-container">
-      {/* <motion.div className='carousel' whileTap={{ cursor: 'grabbing' }} ref={carousel}>
-        <motion.div className='inner' drag='x' dragConstraints={{ right: 0, left: -width }}>
-          {images.map(image => (
-            <motion.div className='slide-item' key={image}>
-              <img src={image} alt="teste" />
-            </motion.div>
-          ))}
-        </motion.div>
-      </motion.div> */}
+    <div className='mt-2 slide-itens'>
+      <Carousel>
+        {images.map((image: string) => (
+          <Carousel.Item>
+            <img className='image-slide' src={`./images/projetos/${image}`} style={{ maxWidth: '100%', height: 'auto' }} />
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </div>
-
   );
 }

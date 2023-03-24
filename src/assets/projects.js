@@ -17,6 +17,7 @@ export const projects = [
       },
     ],
     tech: ['html', 'css', 'javascript'],
+    slideImages: ['portifolio/slide1.png', 'portifolio/slide2.png', 'portifolio/slide3.png', 'portifolio/slide4.png', 'portifolio/slide5.png']
   },
   {
     name: 'ignews - blog',
@@ -36,9 +37,10 @@ export const projects = [
       },
     ],
     tech: ['react', 'nextjs', 'stripe', 'fauna', 'prismic', 'typescript'],
+    slideImages: ['ignews/slide1.png', 'ignews/slide2.png', 'ignews/slide3.png', 'ignews/slide4.png', 'ignews/slide5.png']
   },
   {
-    name: 'poucaspalavras - e commerce',
+    name: 'poucaspalavras',
     image: './images/projetos/projeto3.png',
     page: 1,
     descricao: 'essa é uma descricao maneira',
@@ -55,9 +57,10 @@ export const projects = [
       },
     ],
     tech: ['react', 'nextjs', 'chakra-ui', 'typescript'],
+    slideImages: ['poucaspalavras/slide1.png', 'poucaspalavras/slide2.png', 'poucaspalavras/slide3.png', 'poucaspalavras/slide4.png']
   },
   {
-    name: 'dashgo - dashboard',
+    name: 'dashgo',
     image: './images/projetos/projeto4.png',
     page: 2,
     descricao: 'essa é uma descricao maneira',
@@ -74,6 +77,7 @@ export const projects = [
       },
     ],
     tech: ['react', 'nextjs', 'chakra-ui', 'typescript'],
+    slideImages: ['dashgo/slide1.png', 'dashgo/slide2.png', 'dashgo/slide3.png']
   },
   {
     name: 'world trip',
@@ -93,6 +97,7 @@ export const projects = [
       },
     ],
     tech: ['react', 'typescript', 'styled-component'],
+    slideImages: ['wordtrip/slide1.png', 'wordtrip/slide2.png', 'wordtrip/slide3.png', 'wordtrip/slide4.png',]
   },
   {
     name: 'todo',
@@ -112,6 +117,7 @@ export const projects = [
       },
     ],
     tech: ['react', 'typescript', 'styled-component'],
+    slideImages: ['todo/slide1.png', 'todo/slide2.png']
   },
   {
     name: 'strata',
@@ -131,6 +137,7 @@ export const projects = [
       },
     ],
     tech: ['javascript', 'html', 'scss'],
+    slideImages: ['strata/slide1.png', 'strata/slide2.png', 'strata/slide3.png']
   },
   {
     name: 'time tracker',
@@ -150,6 +157,7 @@ export const projects = [
       },
     ],
     tech: ['javascript', 'html', 'css'],
+    slideImages: ['time/slide1.png']
   },
   {
     name: 'nft preview',
@@ -169,6 +177,7 @@ export const projects = [
       },
     ],
     tech: ['javascript', 'html', 'css'],
+    slideImages: ['nft/slide1.png']
   },
   {
     name: 'parallax',
@@ -188,6 +197,7 @@ export const projects = [
       },
     ],
     tech: ['html', 'css', 'javascript'],
+    slideImages: ['parallax/slide1.png', 'parallax/slide2.png']
   },
   {
     name: 'price cards',
@@ -207,6 +217,7 @@ export const projects = [
       },
     ],
     tech: ['html', 'css', 'javascript'],
+    slideImages: ['card/slide1.png']
   },
   {
     name: 'range hotels',
@@ -226,6 +237,7 @@ export const projects = [
       },
     ],
     tech: ['html', 'css', 'javascript'],
+    slideImages: ['range/slide1.png', 'range/slide2.png']
   },
   {
     name: 'social proof',
@@ -245,5 +257,6 @@ export const projects = [
       },
     ],
     tech: ['html', 'css'],
+    slideImages: ['social/slide1.png']
   },
 ]

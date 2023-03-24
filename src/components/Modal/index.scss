@@ -1,5 +1,5 @@
 .container-modal{
-  padding: 30px 80px 30px 80px;
+  padding: 30px 80px;
   position: relative;
 
   .close{
@@ -105,10 +105,94 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
-  height: 900px;
+  width: 100vw;
+  height: 90vh;
   background-color: var(--c10);
   box-shadow: 24;
   border-radius: 3;
   border-color: transparent;
+}
+
+@media screen and (min-width: 450px){  
+  .box-modal {
+    width: 90%
+  }
+}
+
+@media screen and (max-width: 700px){  
+  .box-modal {
+    width: 85%
+  }
+
+  .container-modal{
+    padding: 15px 30px;
+  }
+
+  .header { 
+    h1 {      
+      font-size: 26px;
+    }
+  }
+
+  .descricao {
+    h2 {
+      font-size: 16px;      
+    }
+  }
+
+  .sobre-mim{
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  .divider {
+    margin: 10px 0;
+  }
+
+  .box-modal{    
+    height: 75vh;
+  }
+}
+
+@media screen and (max-width: 520px){  
+  .box-modal {
+    width: 95%;    
+  }
+
+  .container-modal{
+    padding: 15px 15px;
+  }
+
+  .header { 
+    h1 {      
+      font-size: 26px;
+    }
+  }
+
+  .divider {
+    margin: 10px 0;
+  }
+
+  .box-modal{    
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 900px){  
+  .box-modal {
+    width: 80%
+  }
+}
+
+@media screen and (min-width: 1300px){  
+  .box-modal {
+    width: 60%
+  }
+}
+
+@media screen and (min-width: 1700px){  
+  .box-modal {
+    width: 50%
+  }
 }
