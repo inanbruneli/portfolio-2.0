@@ -3,7 +3,7 @@ export const projects = [
     name: 'portifólio v1',
     image: './images/projetos/projeto1.png',
     page: 1,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Primeira versão do meu portifólio, contendo alguns projetos antigos.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -16,14 +16,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/portifolio',
       },
     ],
-    tech: ['html', 'css', 'javascript'],
+    tech: ['HTML', 'CSS', 'Javascript'],
     slideImages: ['portifolio/slide1.png', 'portifolio/slide2.png', 'portifolio/slide3.png', 'portifolio/slide4.png', 'portifolio/slide5.png']
   },
   {
     name: 'ignews - blog',
     image: './images/projetos/projeto2.png',
     page: 1,
-    descricao: 'Ignews é um <b>blog de notícias sobre programação</b> para manter desenvolvedores e entusiastas da tecnologia atualizados.',
+    descricao: 'Ignews é um blog de notícias sobre programação, com intuito de aprender integrações entre APIs (Prismic, FaunaDB e Stripe)',
     buttons: [
       {
         text: 'acesse aqui',
@@ -36,14 +36,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/ignews',
       },
     ],
-    tech: ['react', 'nextjs', 'stripe', 'fauna', 'prismic', 'typescript'],
+    tech: ['ReactJS', 'NextJS', 'Stripe', 'FaunaDB', 'Prismic', 'Typescript'],
     slideImages: ['ignews/slide1.png', 'ignews/slide2.png', 'ignews/slide3.png', 'ignews/slide4.png', 'ignews/slide5.png']
   },
   {
     name: 'poucaspalavras',
     image: './images/projetos/projeto3.png',
     page: 1,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Poucaspalavras é um e-commerce, com funcionalidades básicas de uma loja, implementado para aprimoração do NextJS e Typescript.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -56,14 +56,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/poucaspalavras',
       },
     ],
-    tech: ['react', 'nextjs', 'chakra-ui', 'typescript'],
+    tech: ['ReactJS', 'NextJS', 'ChakraUI', 'Typescript'],
     slideImages: ['poucaspalavras/slide1.png', 'poucaspalavras/slide2.png', 'poucaspalavras/slide3.png', 'poucaspalavras/slide4.png']
   },
   {
     name: 'dashgo',
     image: './images/projetos/projeto4.png',
     page: 2,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Dashboard desenvolvido com o objetivo de aprimorar minhas habilidades com ChakraUI.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -76,14 +76,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/dashgo',
       },
     ],
-    tech: ['react', 'nextjs', 'chakra-ui', 'typescript'],
+    tech: ['ReactJS', 'NextJS', 'ChakraUI', 'Typescript'],
     slideImages: ['dashgo/slide1.png', 'dashgo/slide2.png', 'dashgo/slide3.png']
   },
   {
     name: 'world trip',
     image: './images/projetos/projeto8.png',
     page: 2,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Site para amantes do turismo, contendo todos os continentes, com suas principais cidades.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -96,34 +96,34 @@ export const projects = [
         link: 'https://github.com/inanbruneli/worldtrip',
       },
     ],
-    tech: ['react', 'typescript', 'styled-component'],
+    tech: ['ReactJS', 'Typescript', 'Styled Component'],
     slideImages: ['wordtrip/slide1.png', 'wordtrip/slide2.png', 'wordtrip/slide3.png', 'wordtrip/slide4.png',]
   },
   {
     name: 'todo',
     image: './images/projetos/projeto9.png',
     page: 2,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Sistema para organizaaão de tarefas, focado em design e hooks.',
     buttons: [
       {
         text: 'acesse aqui',
         class: 'item-tag',
-        link: 'https://inanbruneli.github.io/react-todo-app/',
+        link: 'https://inanbruneli.github.io/ReactJS-todo-app/',
       },
       {
         text: 'repositório',
         class: 'item-tag selecionado',
-        link: 'https://github.com/inanbruneli/react-todo-app',
+        link: 'https://github.com/inanbruneli/ReactJS-todo-app',
       },
     ],
-    tech: ['react', 'typescript', 'styled-component'],
+    tech: ['ReactJS', 'Typescript', 'Styled Component'],
     slideImages: ['todo/slide1.png', 'todo/slide2.png']
   },
   {
     name: 'strata',
     image: './images/projetos/projeto5.png',
     page: 3,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Meu primeiro template, focado em padrões de design e responsividade.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -136,14 +136,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/Strata',
       },
     ],
-    tech: ['javascript', 'html', 'scss'],
+    tech: ['Javascript', 'HTML', 'SASS'],
     slideImages: ['strata/slide1.png', 'strata/slide2.png', 'strata/slide3.png']
   },
   {
     name: 'time tracker',
     image: './images/projetos/projeto6.png',
     page: 3,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Time tracker é um sistema parr gerenciamento de tempo, com consumo de API pública.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -156,14 +156,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/time-tracking-dashboard-main',
       },
     ],
-    tech: ['javascript', 'html', 'css'],
+    tech: ['Javascript', 'HTML', 'CSS'],
     slideImages: ['time/slide1.png']
   },
   {
     name: 'nft preview',
     image: './images/projetos/projeto7.png',
     page: 3,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Uma forma de mostrar minha paixão por NFT e Desenvolvimento.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -176,14 +176,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/nft-preview',
       },
     ],
-    tech: ['javascript', 'html', 'css'],
+    tech: ['Javascript', 'HTML', 'CSS'],
     slideImages: ['nft/slide1.png']
   },
   {
     name: 'parallax',
     image: './images/projetos/projeto10.png',
     page: 4,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Desenvolvido para testar ilusões de ótica, como o paralaxe.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -196,14 +196,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/Parallax',
       },
     ],
-    tech: ['html', 'css', 'javascript'],
+    tech: ['HTML', 'CSS', 'Javascript'],
     slideImages: ['parallax/slide1.png', 'parallax/slide2.png']
   },
   {
     name: 'price cards',
     image: './images/projetos/projeto11.png',
     page: 4,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Página simples para visualização de preços/planos.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -216,14 +216,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/CardPrecos',
       },
     ],
-    tech: ['html', 'css', 'javascript'],
+    tech: ['HTML', 'CSS', 'Javascript'],
     slideImages: ['card/slide1.png']
   },
   {
     name: 'range hotels',
     image: './images/projetos/projeto12.png',
     page: 4,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Landing page para um hotel, utilizando dados de uma API.',
     buttons: [
       {
         text: 'acesse aqui',
@@ -236,14 +236,14 @@ export const projects = [
         link: 'https://github.com/inanbruneli/RangeHotels',
       },
     ],
-    tech: ['html', 'css', 'javascript'],
+    tech: ['HTML', 'CSS', 'Javascript'],
     slideImages: ['range/slide1.png', 'range/slide2.png']
   },
   {
     name: 'social proof',
     image: './images/projetos/projeto13.png',
     page: 5,
-    descricao: 'essa é uma descricao maneira',
+    descricao: 'Página para aprender conceitos basicos do desenvolvimento front-end',
     buttons: [
       {
         text: 'acesse aqui',
@@ -256,7 +256,7 @@ export const projects = [
         link: 'https://github.com/inanbruneli/social-proof-section-master',
       },
     ],
-    tech: ['html', 'css'],
+    tech: ['HTML', 'CSS'],
     slideImages: ['social/slide1.png']
   },
 ]

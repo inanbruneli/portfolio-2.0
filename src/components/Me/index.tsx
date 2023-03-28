@@ -6,7 +6,6 @@ export default function Me() {
     <>
       <div className='container-me d-flex justify-content-between'>
         <div className="col-3 illustration">
-
         </div>
         <div className="col-xxl-9 col-xl-8 col-lg-8 col-md-7 col-sm-8 col-8 content">
           <div className="content-head d-md-flex d-sm-block d-block">

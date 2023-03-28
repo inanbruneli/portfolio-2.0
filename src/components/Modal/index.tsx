@@ -2,6 +2,9 @@ import Modal from '@mui/material/Modal';
 import './index.scss'
 import { ProjectProps } from '../../App';
 import Slide from '../Slide';
+import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
+
 
 interface Props {
   project: ProjectProps;
@@ -10,6 +13,17 @@ interface Props {
 }
 
 export default function ProjectModal({ project, showModal, setShowModal }: Props) {
+  const BootstrapTooltip = styled(({ className, ...props }: TooltipProps) => (
+    <Tooltip {...props} arrow classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.arrow}`]: {
+      color: '#37352F',
+    },
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: '#37352F',
+      fontSize: '0.8rem',
+    },
+  }));
 
   return (
     <Modal
@@ -51,9 +65,11 @@ export default function ProjectModal({ project, showModal, setShowModal }: Props
 
             <div className="tech-container d-flex gap-3 mt-2">
               {project.tech.map(item => (
-                <div className="tech d-flex justify-content-center align-items-center">
-                  <img src={`./images/tech/${item}.svg`} />
-                </div>
+                <BootstrapTooltip title={item} placement="top">
+                  <div className="tech d-flex justify-content-center align-items-center">
+                    <img src={`./images/tech/${item}.svg`} />
+                  </div>
+                </BootstrapTooltip>
               ))}
             </div>
           </div>

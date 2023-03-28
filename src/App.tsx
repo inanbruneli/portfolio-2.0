@@ -5,7 +5,6 @@ import Me from './components/Me';
 import ProjectModal from './components/Modal';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Slide from './components/Slide';
 
 interface ButtonsProps {
   text: string;
