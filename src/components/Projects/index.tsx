@@ -2,13 +2,15 @@ import './index.scss';
 import { projects } from '../../assets/projects';
 import { useState } from 'react';
 import { ProjectProps } from '../../App';
+import { connect } from 'react-redux';
 
 interface Props {
   setProject: (project: ProjectProps) => void;
   setShowModal: (show: boolean) => void;
+  language: string;
 }
 
-export default function Projects({ setProject, setShowModal }: Props) {
+export function Projects({ setProject, setShowModal, language }: Props) {
   const [page, setPage] = useState(1);
 
   function clickProject(project: ProjectProps) {
@@ -20,7 +22,7 @@ export default function Projects({ setProject, setShowModal }: Props) {
     <div className="col-12 mt-2">
       <div className="d-flex gap-5 align-items-end">
         <div className="sobre-mim">
-          <h1>projetos</h1>
+          <h1>{language == 'pt' ? 'projetos' : 'project'}</h1>
           <div className="d-flex borda">
             <div className="grossa"></div>
             <div className="fina align-self-end"></div>
@@ -45,3 +47,11 @@ export default function Projects({ setProject, setShowModal }: Props) {
     </div>
   )
 }
+
+const mapStateToProps = (state: any) => {
+  return {
+    language: state.language
+  }
+}
+
+export default connect(mapStateToProps)(Projects)

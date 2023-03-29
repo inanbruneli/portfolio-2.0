@@ -2,8 +2,9 @@ import './index.scss';
 import { skills } from '../../assets/skills';
 import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
+import { connect } from 'react-redux';
 
-export default function Skills() {
+export function Skills({ language }: any) {
   function makeStars(star: number) {
     let retorno = new Array;
     for (let i = 0; i < 5; i++) {
@@ -30,7 +31,7 @@ export default function Skills() {
   return (
     <div className="container-skills col-12 mt-5">
       <div className="sobre-mim">
-        <h1>habilidades</h1>
+        <h1>{language == 'pt' ? 'habilidades' : 'skills'}</h1>
         <div className="d-flex borda">
           <div className="grossa"></div>
           <div className="fina align-self-end"></div>
@@ -42,8 +43,8 @@ export default function Skills() {
           <div className="skill-item mb-5">
             <h1>{aplicacao}</h1>
             <div className="list mt-3">
-              {skills.filter(skill => skill.tipo == aplicacao).map(skill => (
-                <BootstrapTooltip title={skill.texto} placement="right">
+              {skills.filter(skill => skill.tipo == aplicacao).map((skill: any) => (
+                <BootstrapTooltip title={skill.text[language]} placement="right">
                   <div className='stack d-flex justify-content-between align-items-center'>
                     <span>{skill.linguagem}</span>
                     <div className="dots d-flex col-xl-5 col-lg-6 col-md-6 col-sm-6 col-6 justify-content-between">
@@ -59,3 +60,11 @@ export default function Skills() {
     </div>
   )
 }
+
+const mapStateToProps = (state: any) => {
+  return {
+    language: state.language
+  }
+}
+
+export default connect(mapStateToProps)(Skills)

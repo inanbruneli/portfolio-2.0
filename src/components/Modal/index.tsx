@@ -4,15 +4,17 @@ import { ProjectProps } from '../../App';
 import Slide from '../Slide';
 import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
+import { connect } from 'react-redux';
 
 
 interface Props {
   project: ProjectProps;
   showModal: boolean;
   setShowModal: (show: boolean) => void;
+  language: string;
 }
 
-export default function ProjectModal({ project, showModal, setShowModal }: Props) {
+export function ProjectModal({ project, showModal, setShowModal, language }: Props) {
   const BootstrapTooltip = styled(({ className, ...props }: TooltipProps) => (
     <Tooltip {...props} arrow classes={{ popper: className }} />
   ))(({ theme }) => ({
@@ -56,7 +58,7 @@ export default function ProjectModal({ project, showModal, setShowModal }: Props
 
           <div className="mt-3">
             <div className="sobre-mim">
-              <h1>tecnologias utilizadas</h1>
+              <h1>{language == 'pt' ? 'tecnologias utilizadas' : 'technologies used'}</h1>
               <div className="d-flex borda">
                 <div className="grossa"></div>
                 <div className="fina align-self-end"></div>
@@ -78,3 +80,11 @@ export default function ProjectModal({ project, showModal, setShowModal }: Props
     </Modal>
   );
 }
+
+const mapStateToProps = (state: any) => {
+  return {
+    language: state.language
+  }
+}
+
+export default connect(mapStateToProps)(ProjectModal)

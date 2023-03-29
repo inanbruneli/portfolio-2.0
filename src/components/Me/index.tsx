@@ -1,7 +1,9 @@
+import { connect } from 'react-redux';
 import AboutMe from '../AboutMe';
 import './index.scss';
 
-export default function Me() {
+export function Me({ language }: any) {
+
   return (
     <>
       <div className='container-me d-flex justify-content-between'>
@@ -11,7 +13,7 @@ export default function Me() {
           <div className="content-head d-md-flex d-sm-block d-block">
             <div className="col-md-6 col-sm-12 text-md-start text-sm-center text-center">
               <h1>Inan Brunelli</h1>
-              <h2>desenvolvedor front-end</h2>
+              <h2>{language == 'pt' ? 'desenvolvedor front-end' : 'front-end developer'}</h2>
             </div>
             <div className="col-md-6 col-sm-12 d-flex gap-3 justify-content-md-end justify-content-sm-center justify-content-center mt-md-0 mt-sm-4 mt-4">
               <div className="item git" onClick={() => window.open('https://github.com/inanbruneli', '_blank')}>
@@ -38,7 +40,13 @@ export default function Me() {
         <AboutMe />
       </div>
     </>
-
-
   )
 }
+
+const mapStateToProps = (state: any) => {
+  return {
+    language: state.language
+  }
+}
+
+export default connect(mapStateToProps)(Me)
