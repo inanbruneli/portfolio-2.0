@@ -79,3 +79,21 @@
     color: rgb(66, 66, 66)
   }
 }
+
+@media screen and (max-width: 1100px){
+  .body {      
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .body {      
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .body {      
+    width: 40vw;
+  }
+}

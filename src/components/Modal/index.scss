@@ -9,11 +9,15 @@
     position:absolute;
     right: 20px;
     top: 20px;
+    transition: .2s;
+
+    &:hover{
+      transform: scale(1.1);
+    }
   }
 }
 
 .header { 
-
   h1 {
     color: var(--c1);
     font-size: 34px;
@@ -37,7 +41,7 @@
 }
 
 .divider {
-  margin: 30px 0;
+  margin: 10px 0 20px 0;
 }
 
 .descricao {
@@ -83,7 +87,7 @@
 
 .tech {    
   color: #fff;
-  border: 1px solid var(--c9);
+  
   border-radius: 4px;
   padding: 0.8em 2em;
   background: var(--c9);
@@ -116,6 +120,38 @@
   }
 }
 
+.main-tech {
+  color: var(--hover-text);
+  transform: translate(-0.25rem,-0.25rem);
+  background: #ffffff !important;
+  border:1px solid transparent;
+  padding: 1.2em;
+  border-radius: 50%;
+  transition: .2s;
+  box-shadow: inset 24px 24px 52px #cacaca,
+  inset -24px -24px 52px #f6f6f6;
+
+  &:hover{
+    box-shadow:  24px 24px 52px #bababa,
+             -24px -24px 52px #ffffff;
+  }
+
+  img{
+    filter: grayscale(100%);
+  }  
+}
+
+.theme--night .main-tech {  
+  background: #1F1E1A;
+  box-shadow: inset 24px 24px 37px #12110f,
+              inset -24px -24px 37px #2c2b25;
+
+  &:hover{
+    box-shadow:  0.001px 0.001px 52px #ffffff,
+              -0.001px -0.001px 52px #ffffff !important
+  }
+}
+
 .tech:active {
   transform: translate(0);
   box-shadow: none;
@@ -127,7 +163,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100vw;
-  height: 90vh;
+  height: 95vh;
   background-color: var(--c10);
   box-shadow: 24;
   border-radius: 3;
@@ -217,3 +253,11 @@
     width: 50%
   }
 }
+
+ .date-made {
+  width: 20%;
+  border-left: 3px solid var(--c1);
+  img {
+    width: 1.5rem;    
+  }
+ }

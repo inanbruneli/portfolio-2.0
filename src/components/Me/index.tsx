@@ -19,7 +19,7 @@ export function Me({ language }: any) {
               <div className="item git" onClick={() => window.open('https://github.com/inanbruneli', '_blank')}>
                 <div className="img"></div>
               </div>
-              <div className="item whats" onClick={() => window.open('https://wa.link/z2ae3i', '_blank')}>
+              <div className="item whats" onClick={() => window.open('https://wa.me/5519995919492', '_blank')}>
                 <div className="img"></div>
               </div>
               <div className="item linkedin" onClick={() => window.open('https://www.linkedin.com/in/inan-brunelli/', '_blank')}>

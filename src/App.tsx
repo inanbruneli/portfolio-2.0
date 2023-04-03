@@ -20,6 +20,7 @@ export interface ProjectProps {
   buttons: ButtonsProps[];
   tech: string[];
   slideImages: string[];
+  date: string;
 }
 
 export default function App() {

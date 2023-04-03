@@ -1,7 +1,22 @@
 import { connect } from 'react-redux';
 import '../Me/index.scss';
+import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import { styled } from '@mui/material/styles';
 
 export function AboutMe({ language }: any) {
+  const BootstrapTooltip = styled(({ className, ...props }: TooltipProps) => (
+    <Tooltip {...props} arrow classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.arrow}`]: {
+      color: '#37352F',
+    },
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: '#37352F',
+      fontSize: '0.8rem',
+    },
+  }));
+
+  const mainStacks = ['Javascript', 'ReactJS', 'Typescript', 'PostgreSQL', 'Figma']
 
   return (
     <div className="sobre-mim">
@@ -26,6 +41,18 @@ export function AboutMe({ language }: any) {
             With my experience, technical skills, and <b>passion for technology</b>, I am always looking for new challenges and opportunities to grow professionally.
           </h1>
         )}
+      </div>
+      <div className="d-flex gap-3 mt-2">
+        {mainStacks.map(stack => (
+          <BootstrapTooltip title={stack} placement="top">
+            <div className="main-tech tech d-flex justify-content-center align-items-center">
+              <img src={`./images/tech/${stack}.svg`} />
+            </div>
+          </BootstrapTooltip>
+        ))}
+
+
+
       </div>
     </div>
   )

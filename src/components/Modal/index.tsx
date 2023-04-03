@@ -47,6 +47,12 @@ export function ProjectModal({ project, showModal, setShowModal, language }: Pro
               ))}
             </div>
           </div>
+          <BootstrapTooltip title={language == 'pt' ? 'Feito em' : 'Made in'} placement="top">
+            <div className="d-flex align-items-center date-made">
+              <img src={`./images/date.svg`} />
+              <h6 className="m-0 p-0">{project.date}</h6>
+            </div>
+          </BootstrapTooltip>
           <div className="divider"></div>
 
           <div className="descricao d-flex align-items-start gap-3">
@@ -65,7 +71,7 @@ export function ProjectModal({ project, showModal, setShowModal, language }: Pro
               </div>
             </div>
 
-            <div className="tech-container d-flex gap-3 mt-2">
+            <div className="d-flex gap-3 mt-2">
               {project.tech.map(item => (
                 <BootstrapTooltip title={item} placement="top">
                   <div className="tech d-flex justify-content-center align-items-center">

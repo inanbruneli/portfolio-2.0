@@ -16,9 +16,9 @@ export function ToggleLanguage({ language, change }: Props) {
           <div className="content-switch">
             <label htmlFor='switch' className="label-switch">
               <div className="toggle"></div>
-              <div className="names">
-                <p className="light" onClick={change}>pt</p>
-                <p className="light" onClick={change}>en</p>
+              <div className="names" onClick={change}>
+                <p className="light" >pt</p>
+                <p className="light" >en</p>
               </div>
             </label>
           </div>
