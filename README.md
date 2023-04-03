@@ -18,7 +18,7 @@
 ### Home
 ![](public/img-projet.png)
 
-### Posts
+### Project
 ![](public/modal.png)
 
 ### Links
