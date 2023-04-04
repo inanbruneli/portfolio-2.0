@@ -31,7 +31,7 @@ export const skills = [
     tipo: 'frontend',
     estrelas: 3,
     text: {
-      pt: 'Utilizo Typescript em praticamente todos projetos atuais, tanto pessoais como proficcionais. Possi criar soluções escaláveis, seguras com ela e bem documentadas. Minha experiência em Typescript inclui a criação de aplicações web e mobile.',
+      pt: 'Utilizo Typescript em praticamente todos projetos atuais, tanto pessoais como proficionais. Posso criar soluções escaláveis, seguras com e bem documentadas. Minha experiência em Typescript inclui a criação de aplicações web e mobile.',
       en: 'I use Typescript in virtually all current projects, both personal and professional. I can create scalable, secure, and well-documented solutions with it. My experience with Typescript includes creating web and mobile applications.',
     },
   },
@@ -58,8 +58,8 @@ export const skills = [
     tipo: 'frontend',
     estrelas: 4,
     text: {
-      pt: 'Utilizo React Native para criar aplicativos móveis multiplataforma escaláveis e com ótimo desempenho. Minha experiência em React Native inclui a criação de componentes reutilizáveis. Já desenvolvi sistemas para organização de exercícios físicos, gestão de finanças e controle de transporte de mercadorias.',
-      en: 'I use React Native to create scalable and high-performing cross-platform mobile applications. My experience in React Native includes creating reusable components. I have developed systems for organizing physical exercises, managing finances, and controlling the transportation of goods.',
+      pt: 'Utilizo React Native para criar aplicativos móveis multiplataforma escaláveis e com ótimo desempenho. Já desenvolvi sistemas para organização de exercícios físicos, gestão de finanças e controle de transporte de mercadorias.',
+      en: 'I use React Native to create scalable and high-performing cross-platform mobile applications. I have developed systems for organizing physical exercises, managing finances, and controlling the transportation of goods.',
     },
   },
   {
