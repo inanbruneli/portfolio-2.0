@@ -2,7 +2,7 @@ import DarkMode from '../DarkMode';
 import ToggleLanguage from '../ToggleLanguage';
 import './index.css';
 
-export default function Head() {
+export default function Header() {
   return (
     <div className="container-head d-flex justify-content-between align-items-center">
       <div className="logo d-sm-block d-none">inanbrunelli</div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.scss';
-import Head from "./components/Head";
+import Head from "./components/Header";
 import Me from './components/Me';
 import ProjectModal from './components/Modal';
 import Projects from './components/Projects';
