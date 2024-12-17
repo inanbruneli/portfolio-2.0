@@ -13,7 +13,7 @@ export function Me({ language }: any) {
           <div className="content-head d-md-flex d-sm-block d-block">
             <div className="col-md-6 col-sm-12 text-md-start text-sm-center text-center">
               <h1>Inan Brunelli</h1>
-              <h2>{language == 'pt' ? 'desenvolvedor front-end' : 'front-end developer'}</h2>
+              <h2>{language == 'pt' ? 'Desenvolvedor Full Stack' : 'Full Stack Developer'}</h2>
             </div>
             <div className="col-md-6 col-sm-12 d-flex gap-3 justify-content-md-end justify-content-sm-center justify-content-center mt-md-0 mt-sm-4 mt-4">
               <div className="item git" onClick={() => window.open('https://github.com/inanbruneli', '_blank')}>
